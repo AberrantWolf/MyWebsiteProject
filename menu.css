@@ -5,3 +5,15 @@ div {
 div.year {
 	background: red;
 }
+
+div.month {
+	margin-left: 8px;
+}
+
+div.day {
+	margin-left: 8px;
+}
+
+div.post {
+	margin-left: 8px;
+}
