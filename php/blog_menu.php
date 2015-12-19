@@ -10,9 +10,8 @@ function make_menu($prefix, $current_path, $level) {
 
 		if (is_dir($full_path.$filename)) {
 			$date = strtotime($current_path.$filename);
-			//printf("<div>".$current_path.$filename."</div>");
-
 			$name = $filename;
+
 			if($level == "month") {
 				$name = date('F', $date);
 			} elseif ($level == "day") {
@@ -20,6 +19,7 @@ function make_menu($prefix, $current_path, $level) {
 			}
 
 			printf("<div class=%s id=%s>%s", $level, $current_path.$filename, $name);
+			
 			$next_level = "";
 			if ($level == "year") {
 				$next_level = "month";

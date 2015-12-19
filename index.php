@@ -4,16 +4,18 @@
 		<link rel="stylesheet" href="menu.css">
 		<script src="js/jquery-2.1.4.js"></script>
 		<body>
-			<div id="blog_menu">
-<?php
-include_once "php/blog_menu.php";
+			<div id="page">
+				<div id="blog_menu">
+	<?php
+	include_once "php/blog_menu.php";
 
-make_menu("blog", "", "year");
+	make_menu("blog", "", "year");
 
-//phpinfo();
-?>
-			</div>
-			<div id="blog_view">
+	//phpinfo();
+	?>
+				</div>
+				<div id="blog_view">
+				</div>
 			</div>
 
 			<script>
@@ -27,6 +29,12 @@ $(document).ready(function() {
 			.fail(function() {
 				$("#blog_view").html("FAIL!");
 			});
+		})
+		.mouseover(function(){
+			this.style.fontWeight = "bold";
+		})
+		.mouseout(function(){
+			this.style.fontWeight = "normal";
 		});
 	});
 });

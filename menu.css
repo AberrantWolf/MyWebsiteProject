@@ -1,9 +1,8 @@
 div {
-	background: white;
 }
 
 div.year {
-	background: red;
+	margin-left: 8px;
 }
 
 div.month {
@@ -16,4 +15,27 @@ div.day {
 
 div.post {
 	margin-left: 8px;
+	cursor: pointer;
+}
+
+#page {
+	text-align: center;
+}
+
+#blog_menu {
+	background: pink;
+	padding: 8 8 8 8px;
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	text-align: left;
+}
+
+#blog_view {
+	background: lightgreen;
+	display: inline-block;
+	vertical-align: top;
+	width: 600;
+	margin: auto;
+	text-align: left;
 }
