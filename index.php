@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Hi, My Site</title>
-		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="mywebsite.css">
 		<script src="js/jquery-2.1.4.js"></script>
 		<body>
 			<div id="page">

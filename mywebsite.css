@@ -33,6 +33,7 @@ div.post {
 
 #blog_view {
 	background: lightgreen;
+	padding: 8 8 8 8px;
 	display: inline-block;
 	vertical-align: top;
 	width: 600;
