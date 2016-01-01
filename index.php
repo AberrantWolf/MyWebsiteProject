@@ -27,7 +27,7 @@ $(document).ready(function() {
 				$("#blog_view").html(msg);
 			})
 			.fail(function() {
-				$("#blog_view").html("FAIL!");
+				$("#blog_view").html("AJAX failure loading post: " + this.id);
 			});
 		})
 		.mouseover(function(){
@@ -37,6 +37,14 @@ $(document).ready(function() {
 			this.style.fontWeight = "normal";
 		});
 	});
+
+	$.ajax("php/blog_view.php?entry=")
+	.success(function(msg){
+		$("#blog_view").html(msg);
+	})
+	.fail(function() {
+		$("#blog_view").html("AJAX failure loading default bog posts");
+	})
 });
 			</script>
 		</body>
