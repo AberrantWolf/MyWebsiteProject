@@ -40,3 +40,13 @@ div.post {
 	margin: auto;
 	text-align: left;
 }
+
+.img_float_right {
+	float:right;
+}
+
+.img_align_center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
