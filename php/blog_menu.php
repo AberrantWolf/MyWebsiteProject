@@ -5,8 +5,9 @@ function make_menu($prefix, $current_path, $level) {
 	$reverse_list = array_reverse($files); // access files most recent at top
 	foreach ($reverse_list as $key => $filename) {
 		// skip '.' and '..' directories in a reverse-sorted list
-		if ($key > count($reverse_list)-3)
+		if ($key > count($reverse_list)-3) {
 			continue;
+                }
 
 		if (is_dir($full_path.$filename)) {
 			$date = strtotime($current_path.$filename);
